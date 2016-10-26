@@ -5,7 +5,7 @@ int main()
 {
 	int a,b,c,m;
 	scanf("%d%d%d",&a,&b,&c);
-	m = min(min(abs(b-a)+abs(c-a),abs(a-b)+abs(c-b)),abs(a-c)+abs(b-c));
+	m = max(a,max(b,c)) - min(a,min(b,c));
 	printf("%d\n",m);
 }
 
